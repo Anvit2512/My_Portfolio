@@ -1,0 +1,28 @@
+body {
+    background-color: #f2ebeb;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease; /* Add smooth transition */
+}
+
+/* Add these new styles to verify CSS is working */
+.verification-box {
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #e8f5e9;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.verification-title {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.verification-text {
+    color: #1b5e20;
+    font-size: 16px;
+}
