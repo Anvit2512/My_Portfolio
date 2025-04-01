@@ -1,13 +1,58 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <!-- Basic content to verify loading -->
-    <h1 style="text-align: center; margin-top: 30px;">Welcome to My Portfolio</h1>
+    <header>
+        <h1>Anvit Kumar</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2>Anvit Kumar</h2>
+        <h3>SOFTWARE ENGINEER</h3>
+        <button class="btn">GET IN TOUCH</button>
+        <button class="btn">DOWNLOAD RESUME</button>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>Software Engineer with expertise in building scalable applications.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Frontend Development</li>
+            <li>Backend Development</li>
+            <li>Database Management</li>
+            <li>Cloud Computing</li>
+        </ul>
+    </section>
+
+    <section id="work" class="section">
+        <h2>Work Experience</h2>
+        <p>Senior Software Engineer at Tech Innovators Inc. (2018 - Present)</p>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: example@example.com</p>
+    </footer>
+
     <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

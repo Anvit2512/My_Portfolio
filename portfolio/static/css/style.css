@@ -1,28 +1,75 @@
 body {
-    background-color: #f2ebeb;
+    background-color: #0f0f0f;
+    color: white;
     font-family: Arial, sans-serif;
-    transition: background-color 0.5s ease; /* Add smooth transition */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-/* Add these new styles to verify CSS is working */
-.verification-box {
-    padding: 20px;
-    margin: 50px auto;
-    max-width: 600px;
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
-    background-color: #e8f5e9;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.verification-title {
-    color: #2e7d32;
+header h1 {
+    color: #00ffcc;
     font-size: 24px;
-    margin-bottom: 15px;
 }
 
-.verification-text {
-    color: #1b5e20;
-    font-size: 16px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ffcc;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: #00ffcc;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
 }
