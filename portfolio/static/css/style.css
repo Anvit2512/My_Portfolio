@@ -1,5 +1,5 @@
 body {
-    background-color: #0f0f0f;
+    background-color: #222222;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #111;
+    background-color: #222222;
     position: fixed;
     width: 100%;
     top: 0;
@@ -44,6 +44,58 @@ nav ul li a:hover {
     color: #00ffcc;
 }
 
+.infoSection nav {
+    background-color: #222222;
+    overflow-x: auto;       
+    white-space: nowrap;   
+  }
+  
+ 
+#info ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+  #info ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  #info ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+ 
+  #info ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    #info ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #info ul li {
+      margin: 5px 0;
+    }
+  
+    #info ul li a {
+      width: 100%;
+    }
+  }
+
+
 .section {
     height: 100vh;
     display: flex;
@@ -73,3 +125,4 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
